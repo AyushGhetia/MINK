@@ -1,0 +1,30 @@
+.carousel-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .carousel-section {
+    height: 60vh; /* Adjust for mobile view */
+  }
+}

@@ -1,0 +1,179 @@
+.hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #bbb;
+}
+
+.play-button {
+  font-size: 2rem;
+  padding: 15px 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.nav-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 330px;
+  gap: 15px;
+}
+
+.nav-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #e0e0e0;
+}
+
+.reserve-now {
+  padding: 8px 15px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.reserve-now:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.invest-mink {
+  background-color: #001e30;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+.invest-mink:hover {
+  background-color: #003048;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+.hero-section {
+  height: 70vh; 
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+}
+
+.play-button {
+  padding: 12px 24px;
+  font-size: 1.5rem;
+}
+
+.nav-section {
+  margin-top: 250px;
+}
+
+.nav-box {
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-links {
+  flex-direction: column;
+}
+
+.reserve-now,
+.invest-mink {
+  width: 100%;
+}
+}

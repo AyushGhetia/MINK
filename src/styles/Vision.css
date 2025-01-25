@@ -1,0 +1,23 @@
+.vision-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .vision-fullscreen-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
+  @media (max-width: 768px) {
+    .vision-container {
+      height: 60vh; 
+    }
+  }
+  
